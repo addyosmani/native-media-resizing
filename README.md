@@ -23,3 +23,17 @@ The steps to use this functionality are as follows:
 5. Select "Choose Image Size" at the bottom of the screen
 6. Select Large, Medium, Small, or Actual Size. Go back from the library.
 7. Select 'Done' in the top-right corner of the screen to upload the image
+
+## Layering on top of File Input
+
+This proposal does not require a developer to make any changes in order to benefit from browser-level image resizing. It builds on
+top of the existing file input element and accept filter for indicating that you only want image files (`<input type="file" accept="image/*">`). This method works on all platforms. 
+
+On desktop, browsers prompt the user to upload an image from the file system. In Chrome for Android and Safari on iOS, users are already provided an enhanced image selection experience (e.g the choice of which input method and app they would like to use to capture an image). Image resizing would build on this by extending mobile browsers to match Safari's behavior.
+
+We may want to consider whether an attribute for developer opt-out is necessary, but this may not be required for MVP.
+
+## User benefits
+
+* Data-savings on upload: On mobile, uploading very high-resolution images can impact user's data-plans and the time it takes to upload the image before it can be used on a site. 
+* Data-savings on download: A user who uploads a high-resolution image is relying on the site to figure out if the image should be resized and optimized. This is not always the case. Picture a user uploading a high-res photo as an avatar only for it to be served as-is from the site rather than a smaller version. Or, a CMS-user who is uploading stock photos for news articles.
