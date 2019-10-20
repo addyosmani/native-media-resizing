@@ -37,3 +37,10 @@ We may want to consider whether an attribute for developer opt-out is necessary,
 
 * Data-savings on upload: On mobile, uploading very high-resolution images can impact user's data-plans and the time it takes to upload the image before it can be used on a site. 
 * Data-savings on download: A user who uploads a high-resolution image is relying on the site to figure out if the image should be resized and optimized. This is not always the case. Picture a user uploading a high-res photo as an avatar only for it to be served as-is from the site rather than a smaller version. Or, a CMS-user who is uploading stock photos for news articles.
+
+## Future directions: Compression
+
+In addition to native media resizing, native image compression could also be explored as a next-step. This would provide users the ability to locally compress their images to reduce their over-the-wire size. This could take the form of a simple quality slider that visualizes file size. Customizing optimizers (e.g MozJPEG) or formats (AV1) may be considered too advanced for the average user, but could also be considered in the future.
+
+<img width="185" alt="Screen Shot 2019-10-20 at 1 51 51 PM" src="https://user-images.githubusercontent.com/110953/67166037-7cb0cf80-f37b-11e9-850c-5483be380d88.png">
+
