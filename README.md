@@ -9,7 +9,7 @@ The benefits of this capability are faster uploads of user-submitted images and 
 
 ## Prior Art: Safari on iOS 13
 
-In Safari for iOS 13, Apple shipped support for the above behavior. It allows a user to choose what size image to upload, providing
+In Safari for iOS 13, Apple [shipped](https://www.apple.com/ios/ios-13/features/) support for the above behavior. It allows a user to choose what size image to upload, providing
 the options Actual Size, Large, Medium, and Small. File size information is summarized when a user selects one of these options.
 
 ![image-resize@2x](https://user-images.githubusercontent.com/110953/67166001-0d3ae000-f37b-11e9-8bed-20c493eea2c4.jpg)
